@@ -1,0 +1,61 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.colorTheme": "Panda Syntax",
+    "workbench.fontAliasing": "antialiased",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 16,
+    "editor.minimap.renderCharacters": false,
+    "editor.snippetSuggestions": "top",
+    "terminal.integrated.shell.osx": "zsh",
+    "terminal.integrated.fontFamily": "Operator Mono SSm Lig",
+    "explorer.confirmDragAndDrop": false,
+    "emmet.showSuggestionsAsSnippets": true,
+    "prettier.singleQuote": true,
+    "window.zoomLevel": 0,
+    "breadcrumbs.enabled": true,
+    "editor.renderWhitespace": "all",
+    "auto-close-tag.activationOnLanguage": [
+        "xml",
+        "HTML (Eex)"
+    ],
+    "editor.fontFamily": "Operator Mono SSm Lig",
+    "python.jediEnabled": false,
+    "python.linting.pylintEnabled": true,
+    "editor.detectIndentation": false,
+    "editor.suggestSelection": "first",
+    "codemetrics.basics.ComplexityLevelExtremeDescription": "😱",
+    "codemetrics.basics.ComplexityLevelHighDescription": "😳",
+    "codemetrics.basics.ComplexityLevelLowDescription": "🤓",
+    "codemetrics.basics.ComplexityLevelNormalDescription": "🤔",
+    "codemetrics.basics.ComplexityTemplate": "Complexity is {0} {1}",
+    "workbench.settings.editor": "ui",
+    "gitlab.instanceUrl": "https://git.digitalsmiths.com",
+    "gitlab.enableExperimentalFeatures": true,
+    "terminal.integrated.rendererType": "dom",
+    "files.trimTrailingWhitespace": true,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.factorypath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/node_modules": true
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "html.format.wrapAttributes": "preserve-aligned",
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features",
+        "editor.formatOnSave": true
+    },
+    "[scss]": {
+        "files.insertFinalNewline": true
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll.tslint": true
+    },
+    "workbench.iconTheme": "vscode-icons",
+    "vsicons.dontShowNewVersionMessage": true,
+    "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:\"/Users/acuster/.vscode/extensions/gabrielbb.vscode-lombok-0.9.9/server/lombok.jar\""
+}
