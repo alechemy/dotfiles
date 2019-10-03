@@ -33,6 +33,8 @@ setopt SHARE_HISTORY
 zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
 
+bindkey -e
+
 # fuzzy find: start to type
 bindkey "$terminfo[kcuu1]" up-line-or-beginning-search
 bindkey "$terminfo[kcud1]" down-line-or-beginning-search
