@@ -1,13 +1,23 @@
 {
     "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features",
-        "editor.formatOnSave": true
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features",
+        "editor.formatOnSave": false
     },
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
     "[scss]": {
-        "files.insertFinalNewline": true
+        "editor.codeActionsOnSave": {
+            "source.fixAll.stylelint": true
+        },
+        "editor.formatOnSave": false
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features",
+        "editor.formatOnSave": false
     },
     "auto-close-tag.activationOnLanguage": [
         "xml",
@@ -19,13 +29,11 @@
     "codemetrics.basics.ComplexityLevelLowDescription": "🤓",
     "codemetrics.basics.ComplexityLevelNormalDescription": "🤔",
     "codemetrics.basics.ComplexityTemplate": "Complexity is {0} {1}",
-    "editor.codeActionsOnSave": {
-        "source.fixAll.tslint": true
-    },
-    "editor.detectIndentation": false,
+    "diffEditor.ignoreTrimWhitespace": false,
     "editor.fontFamily": "Operator Mono SSm Lig",
     "editor.fontLigatures": true,
     "editor.fontSize": 16,
+    "editor.formatOnSave": true,
     "editor.minimap.renderCharacters": false,
     "editor.renderWhitespace": "all",
     "editor.snippetSuggestions": "top",
@@ -39,17 +47,24 @@
         "**/.settings": true,
         "**/node_modules": true
     },
+    "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "gitlab.enableExperimentalFeatures": true,
     "gitlab.instanceUrl": "https://git.digitalsmiths.com",
     "html.format.wrapAttributes": "preserve-aligned",
-    "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:\"/Users/acuster/.vscode/extensions/gabrielbb.vscode-lombok-0.9.9/server/lombok.jar\"",
-    "prettier.singleQuote": true,
+    "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:\"/Users/acuster/.vscode/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
+    "javascript.preferences.importModuleSpecifier": "relative",
     "python.jediEnabled": false,
     "python.linting.pylintEnabled": true,
+    "scss.validate": false,
     "terminal.integrated.fontFamily": "Operator Mono SSm Lig",
     "terminal.integrated.rendererType": "dom",
     "terminal.integrated.shell.osx": "zsh",
+    "tslint.autoFixOnSave": true,
+    "typescript.format.insertSpaceAfterConstructor": true,
+    "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
+    "typescript.preferences.importModuleSpecifier": "relative",
+    "typescript.updateImportsOnFileMove.enabled": "never",
     "vsicons.dontShowNewVersionMessage": true,
     "window.zoomLevel": 0,
     "workbench.colorTheme": "Panda Syntax",
