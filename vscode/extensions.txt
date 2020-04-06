@@ -1,12 +1,10 @@
 Angular.ng-template
-brain.angular-bare-essentials
 christian-kohler.npm-intellisense
 christian-kohler.path-intellisense
 CoenraadS.bracket-pair-colorizer
 DavidAnson.vscode-markdownlint
 dotiful.dotfiles-syntax-highlighting
 DotJoshJohnson.xml
-eg2.tslint
 eg2.vscode-npm-script
 eriklynd.json-tools
 fatihacet.gitlab-workflow
@@ -27,6 +25,7 @@ PKief.material-icon-theme
 redhat.java
 richie5um2.vscode-sort-json
 shinnn.stylelint
+stylelint.vscode-stylelint
 tinkertrain.theme-panda
 TomiTurtiainen.rf-intellisense
 Tyriar.sort-lines

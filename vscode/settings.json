@@ -17,7 +17,10 @@
     },
     "[typescript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features",
-        "editor.formatOnSave": false
+        "editor.formatOnSave": false,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.tslint": true
+        }
     },
     "auto-close-tag.activationOnLanguage": [
         "xml",
@@ -57,10 +60,11 @@
     "python.jediEnabled": false,
     "python.linting.pylintEnabled": true,
     "scss.validate": false,
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
     "terminal.integrated.fontFamily": "Operator Mono SSm Lig",
     "terminal.integrated.rendererType": "dom",
     "terminal.integrated.shell.osx": "zsh",
-    "tslint.autoFixOnSave": true,
     "typescript.format.insertSpaceAfterConstructor": true,
     "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
     "typescript.preferences.importModuleSpecifier": "relative",
