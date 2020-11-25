@@ -43,16 +43,8 @@ bindkey "$terminfo[cud1]" down-line-or-beginning-search
 
 # search history with fzf if installed, default otherwise
 if test -d /usr/local/opt/fzf/shell; then
-	# shellcheck disable=SC1091
-	. /usr/local/opt/fzf/shell/key-bindings.zsh
+  # shellcheck disable=SC1091
+  . /usr/local/opt/fzf/shell/key-bindings.zsh
 else
-	bindkey '^R' history-incremental-search-backward
+  bindkey '^R' history-incremental-search-backward
 fi
-
-# named directories
-hash -d ffs=$HOME/Work/ffs
-hash -d ffs-console=$HOME/Work/ffs/ffs-console
-hash -d webapp=$HOME/Work/ffs/ffs-console/src/main/webapp
-hash -d robotframework=$HOME/Work/ffs/ffs-server/src/test/robotframework
-
-export NVM_LAZY_LOAD=true

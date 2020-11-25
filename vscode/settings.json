@@ -1,80 +1,101 @@
 {
-    "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
+  // EDITOR
+  // ----------------------------------------
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.detectIndentation": false,
+  "editor.formatOnSave": true,
+  "editor.fontFamily": "Operator Mono SSm Lig",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.minimap.renderCharacters": false,
+  "editor.renderWhitespace": "all",
+  "editor.rulers": [
+    {
+      "column": 80,
+      "color": "#102a44"
+    }
+  ],
+
+  // FILES
+  // ----------------------------------------
+  "files.exclude": {
+    "**/.cache": true,
+    "**/node_modules": true,
+    "**/target": true
+  },
+  // "files.insertFinalNewline": true,
+  // "files.trimFinalNewlines": true,
+  // "files.trimTrailingWhitespace": true,
+
+  // WORKBENCH
+  // ----------------------------------------
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.fontAliasing": "antialiased",
+  "workbench.settings.editor": "json",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.colorCustomizations": {
+    "[Night Owl]": {
+      "activityBar.background": "#000C1D",
+      "activityBar.border": "#102a44",
+      "sideBar.background": "#001122",
+      "sideBar.border": "#102a44",
+      "sideBar.foreground": "#8BADC1"
     },
-    "[javascript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features",
-        "editor.formatOnSave": false
-    },
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "[scss]": {
-        "editor.codeActionsOnSave": {
-            "source.fixAll.stylelint": true
-        },
-        "editor.formatOnSave": false
-    },
-    "[typescript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features",
-        "editor.formatOnSave": false,
-        "editor.codeActionsOnSave": {
-            "source.fixAll.tslint": true
-        }
-    },
-    "auto-close-tag.activationOnLanguage": [
-        "xml",
-        "HTML (Eex)"
-    ],
-    "breadcrumbs.enabled": true,
-    "codemetrics.basics.ComplexityLevelExtremeDescription": "😱",
-    "codemetrics.basics.ComplexityLevelHighDescription": "😳",
-    "codemetrics.basics.ComplexityLevelLowDescription": "🤓",
-    "codemetrics.basics.ComplexityLevelNormalDescription": "🤔",
-    "codemetrics.basics.ComplexityTemplate": "Complexity is {0} {1}",
-    "diffEditor.ignoreTrimWhitespace": false,
-    "editor.fontFamily": "Operator Mono SSm Lig",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 16,
-    "editor.formatOnSave": true,
-    "editor.minimap.renderCharacters": false,
-    "editor.renderWhitespace": "all",
-    "editor.snippetSuggestions": "top",
-    "editor.suggestSelection": "first",
-    "emmet.showSuggestionsAsSnippets": true,
-    "explorer.confirmDragAndDrop": false,
-    "files.exclude": {
-        "**/.classpath": true,
-        "**/.factorypath": true,
-        "**/.project": true,
-        "**/.settings": true,
-        "**/node_modules": true
-    },
-    "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true,
-    "gitlab.enableExperimentalFeatures": true,
-    "gitlab.instanceUrl": "https://git.digitalsmiths.com",
-    "html.format.wrapAttributes": "preserve-aligned",
-    "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:\"/Users/acuster/.vscode/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
-    "javascript.preferences.importModuleSpecifier": "relative",
-    "python.jediEnabled": false,
-    "python.linting.pylintEnabled": true,
-    "scss.validate": false,
-    "telemetry.enableTelemetry": false,
-    "telemetry.enableCrashReporter": false,
-    "terminal.integrated.fontFamily": "Operator Mono SSm Lig",
-    "terminal.integrated.rendererType": "dom",
-    "terminal.integrated.shell.osx": "zsh",
-    "typescript.format.insertSpaceAfterConstructor": true,
-    "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
-    "typescript.preferences.importModuleSpecifier": "relative",
-    "typescript.updateImportsOnFileMove.enabled": "never",
-    "vsicons.dontShowNewVersionMessage": true,
-    "window.zoomLevel": 0,
-    "workbench.colorTheme": "Panda Syntax",
-    "workbench.editor.tabSizing": "shrink",
-    "workbench.fontAliasing": "antialiased",
-    "workbench.iconTheme": "vscode-icons",
-    "workbench.settings.editor": "ui",
-    "workbench.startupEditor": "newUntitledFile"
+    "[Night Owl No Italics]": {
+      "activityBar.background": "#000C1D",
+      "activityBar.border": "#102a44",
+      "sideBar.background": "#001122",
+      "sideBar.border": "#102a44",
+      "sideBar.foreground": "#8BADC1"
+    }
+  },
+  "workbench.colorTheme": "Night Owl",
+  "workbench.iconTheme": "vscode-icons",
+
+  // JAVASCRIPT
+  // ----------------------------------------
+  "javascript.preferences.importModuleSpecifier": "relative",
+
+  // TYPESCRIPT
+  // ----------------------------------------
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.suggest.paths": false,
+  "typescript.updateImportsOnFileMove.enabled": "never",
+
+  // PYTHON
+  // ----------------------------------------
+  "python.defaultInterpreterPath": "/Users/acuster/.pyenv/shims/python",
+  "python.languageServer": "Pylance",
+  "python.linting.pylintEnabled": true,
+
+  // JAVA
+  // ----------------------------------------
+  "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:\"/Users/acuster/.vscode-oss/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
+  "java.semanticHighlighting.enabled": true,
+
+  // EVERYTHING ELSE
+  // ----------------------------------------
+  "auto-close-tag.activationOnLanguage": ["xml", "HTML (Eex)"],
+  "diffEditor.ignoreTrimWhitespace": false,
+  "explorer.confirmDragAndDrop": false,
+  "gitlens.remotes": [
+    {
+      "domain": "git.digitalsmiths.com",
+      "type": "GitLab"
+    }
+  ],
+  "telemetry.enableTelemetry": false,
+  "telemetry.enableCrashReporter": false,
+  "terminal.integrated.fontFamily": "Operator Mono SSm Lig",
+  "terminal.integrated.rendererType": "dom",
+  "terminal.integrated.shell.osx": "zsh",
+  "vsicons.dontShowNewVersionMessage": true,
+  "window.zoomLevel": 0,
+  "eslint.lintTask.enable": true,
+  "eslint.format.enable": true,
+  "eslint.alwaysShowStatus": true,
+  "editor.snippetSuggestions": "bottom",
+  "editor.suggest.localityBonus": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
 }

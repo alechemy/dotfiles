@@ -5,7 +5,7 @@ export DOTFILES="$HOME/.dotfiles"
 
 # your default editor
 export EDITOR='nano'
-export VEDITOR='code'
+export VISUAL='nova'
 
 # all of our zsh files
 typeset -U config_files

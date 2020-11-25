@@ -1,5 +1,4 @@
 # this block is in alphabetical order
-lukechilds/zsh-nvm
 mafredri/zsh-async
 zsh-users/zsh-autosuggestions
 zsh-users/zsh-completions
