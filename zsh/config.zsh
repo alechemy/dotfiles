@@ -3,8 +3,9 @@ export LSCOLORS='exfxcxdxbxegedabagacad'
 export CLICOLOR=true
 
 fpath=($DOTFILES/functions $fpath)
+fpath=($DOTFILES/ffs $fpath)
 
-autoload -U "$DOTFILES"/functions/*(:t)
+autoload -U $fpath[1]/*(.:t)
 autoload -U up-line-or-beginning-search
 autoload -U down-line-or-beginning-search
 
