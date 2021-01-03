@@ -17,7 +17,7 @@ end)
 
 -- Make more:
 -- hs.fnutils.each(hs.application.runningApplications(), function(app) print(app:title()) end)
--- hs.fnutils.each(hs.application.runningApplications(), function(app) print(app:bundleID()) end)
+hs.fnutils.each(hs.application.runningApplications(), function(app) print(app:bundleID()) end)
 
 -- HYPER APPLICATION BINDINGS:
 -- A commented out config usually indicates that the binding is set within
@@ -27,14 +27,14 @@ hyper_bindings = {
     ["name"] = "Bear",
     ["newWindowMenuItem"] = {"Window", "Main Window"}
   },
-  -- ["C"] = {
-  --   ["name"] = "Code",
-  --   ["bundleID"] = "com.microsoft.VSCode",
-  --   ["newWindowMenuItem"] = {"File", "New Window"}
-  -- },
   ["C"] = {
-    ["name"] = "Nova",
-    ["newWindowMenuItem"] = {"Window", "Launcher"}
+    ["name"] = "VSCodium",
+    ["bundleID"] = "com.visualstudio.code.oss",
+    ["newWindowMenuItem"] = {"File", "New Window"}
+  },
+  ["D"] = {
+    ["name"] = "DEVONthink 3",
+    ["newWindowMenuItem"] = {"File", "New Window", "Notebox"}
   },
   ["E"] = {
     ["name"] = "Mail",
@@ -62,6 +62,10 @@ hyper_bindings = {
     ["name"] = "Music",
     ["triggerOnRelease"] = true,
     ["newWindowMenuItem"] = {"Window", "Music"}
+  },
+  ["N"] = {
+    ["name"] = "Nova",
+    ["newWindowMenuItem"] = {"Window", "Launcher"}
   },
   ["O"] = {
     ["name"] = "Outlook"
