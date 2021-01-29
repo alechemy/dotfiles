@@ -8,6 +8,8 @@
 secure_input_notification: false
 # This causes conflicts with some of my hyper-key shortcuts
 toggle_key: OFF
+# Don't auto restart
+auto_restart: false
 
 # Matches are the substitution rules, when you type the "trigger" string
 # it gets replaced by the "replace" string.
@@ -15,10 +17,6 @@ matches:
   # Simple text replacement
   - trigger: ":espanso"
     replace: "Hi there!"
-
-  # superuser
-  - trigger: ":su"
-    replace: "superuser"
 
   # princeum ipsum
   - trigger: ":princeum"
@@ -28,11 +26,6 @@ matches:
       And I'd like to take a minute
       Just sit right there
       I'll tell you how I became the prince of a town called Bel Air
-
-  # teh -> the
-  - trigger: "teh"
-    replace: "the"
-    word: true
 
   # Dates
   - trigger: ":date"

@@ -1,0 +1,3 @@
+# disable default.yml expansions in Slack, which has its own `:` shortcuts
+filter_title: 'llc.gumbs.multi.Slack-Lite'
+exclude_default_entries: true
