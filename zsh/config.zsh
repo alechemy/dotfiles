@@ -38,6 +38,11 @@ zle -N history-beginning-search-forward-end history-search-end
 bindkey "^[[A" history-beginning-search-backward-end
 bindkey "^[[B" history-beginning-search-forward-end
 
+# Some keybindings to make iTerm / zsh more "Mac-like".
+# Credit: https://stackoverflow.com/a/29403520
+bindkey "^U" backward-kill-line # Change ^U to delete all to left of cursor, instead of the whole line
+bindkey "^X^_" redo # Map unused hex code to redo. This hex code is then mapped to CMD-SHIFT-z in my iTerm profile.
+
 # search history with fzf if installed, default otherwise
 if test -d /usr/local/opt/fzf/shell; then
   # shellcheck disable=SC1091
