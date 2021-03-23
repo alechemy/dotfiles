@@ -165,35 +165,6 @@
             ]
           },
           {
-            "description": "Remap Hyper-p to Pinstachio shortcut",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "p",
-                  "modifiers": {
-                    "mandatory": [
-                      "right_command",
-                      "right_control",
-                      "right_shift",
-                      "right_option"
-                    ]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "p",
-                    "modifiers": [
-                      "right_command",
-                      "right_control",
-                      "right_option"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
             "description": "Remap Hyper-tab to Rectangle next monitor shortcut",
             "manipulators": [
               {
