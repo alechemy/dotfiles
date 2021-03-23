@@ -1,9 +1,13 @@
 require('apps')
 
--- CONSTANTS:
+--[[---------------
+---- CONSTANTS ----
+-------------------]]
 hyper = {"rightcmd", "rightoption", "rightctrl", "rightshift"}
 
--- UTILITY BINDINGS
+--[[----------------------
+---- UTILITY BINDINGS ----
+--------------------------]]
 
 -- hyperkey + "L" = Lock screen
 hs.hotkey.bind(hyper, "L", function()
@@ -15,12 +19,15 @@ hs.hotkey.bind(hyper, "0", function()
   hs.reload()
 end)
 
--- Make more:
+-- Uncomment these commands to print out the running apps' titles and bundle IDs. Useful when creating new shortcuts.
 -- hs.fnutils.each(hs.application.runningApplications(), function(app) print(app:title()) end)
-hs.fnutils.each(hs.application.runningApplications(), function(app) print(app:bundleID()) end)
+-- hs.fnutils.each(hs.application.runningApplications(), function(app) print(app:bundleID()) end)
 
--- HYPER APPLICATION BINDINGS:
--- A commented out config usually indicates that the binding is set within
+--[[--------------------------------
+---- HYPER APPLICATION BINDINGS ----
+------------------------------------]]
+
+-- A commented out config here usually indicates that the binding is set within
 -- the preferences of the respective app.
 hyper_bindings = {
   ["B"] = {
@@ -124,7 +131,10 @@ for key, app in pairs(hyper_bindings) do
   end
 end
 
--- URL EVENT BINDINGS:
+--[[------------------------
+---- URL EVENT BINDINGS ----
+----------------------------]]
+
 -- These are emitted by Karabiner-Elements
 for key, app in pairs(shyper_bindings) do
   if app.triggerOnRelease then
