@@ -21,8 +21,12 @@
   "files.exclude": {
     "**/.cache": true,
     "**/node_modules": true,
-    "**/target": true
-  },
+    "**/target": true,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+},
   // "files.insertFinalNewline": true,
   // "files.trimFinalNewlines": true,
   // "files.trimTrailingWhitespace": true,
@@ -52,6 +56,10 @@
   "workbench.colorTheme": "Night Owl",
   "workbench.iconTheme": "vscode-icons",
 
+  // ANGULAR
+  // ----------------------------------------
+  "angular.experimental-ivy": true,
+
   // JAVASCRIPT
   // ----------------------------------------
   "javascript.preferences.importModuleSpecifier": "relative",
@@ -59,6 +67,7 @@
   // TYPESCRIPT
   // ----------------------------------------
   "typescript.preferences.importModuleSpecifier": "relative",
+  // this allows Path Intellisense to act as default autocompletion engine
   "typescript.suggest.paths": false,
   "typescript.updateImportsOnFileMove.enabled": "never",
 
@@ -87,15 +96,14 @@
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
   "terminal.integrated.fontFamily": "Operator Mono SSm Lig",
-  "terminal.integrated.rendererType": "dom",
-  "terminal.integrated.shell.osx": "zsh",
+  "terminal.integrated.defaultProfile.osx": "zsh",
   "vsicons.dontShowNewVersionMessage": true,
-  "window.zoomLevel": 0,
   "eslint.lintTask.enable": true,
   "eslint.format.enable": true,
   "eslint.alwaysShowStatus": true,
   "editor.snippetSuggestions": "bottom",
   "editor.suggest.localityBonus": true,
   "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "update.mode": "manual"
 }
