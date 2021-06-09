@@ -20,8 +20,10 @@ hs.hotkey.bind(hyper, "0", function()
 end)
 
 -- Uncomment these commands to print out the running apps' titles and bundle IDs. Useful when creating new shortcuts.
--- hs.fnutils.each(hs.application.runningApplications(), function(app) print(app:title()) end)
--- hs.fnutils.each(hs.application.runningApplications(), function(app) print(app:bundleID()) end)
+--   hs.fnutils.each(hs.application.runningApplications(), function(app) print(app:title()) end)
+--   hs.fnutils.each(hs.application.runningApplications(), function(app) print(app:bundleID()) end)
+-- Alternatively, in terminal:
+--   osascript -e 'id of app "Name of App"'
 
 --[[--------------------------------
 ---- HYPER APPLICATION BINDINGS ----
@@ -56,9 +58,8 @@ hyper_bindings = {
     ["newWindowMenuItem"] = {"File", "New Things Window"}
   },
   ["K"] = {
-    ["name"] = "Keep It",
-    ["triggerOnRelease"] = true,
-    ["newWindowMenuItem"] = {"Window", "Library"}
+    ["name"] = "kitty",
+    ["newWindowMenuItem"] = {"kitty", "New OS window"}
   },
   ["I"] = {
     ["name"] = "iTerm2",
@@ -78,7 +79,7 @@ hyper_bindings = {
     ["name"] = "Outlook"
   },
   ["P"] = {
-    ["name"] = "Roofs"
+    ["name"] = "Pins"
   },
   ["R"] = {
     ["name"] = "Reeder",
