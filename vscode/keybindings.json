@@ -1,6 +1,10 @@
 // Place your key bindings in this file to override the defaults
 [
   {
+    "key": "cmd+ctrl+`",
+    "command": "workbench.action.focusNextGroup"
+  },
+  {
     "key": "shift+cmd+,",
     "command": "-editor.action.inPlaceReplace.up",
     "when": "editorTextFocus && !editorReadonly"
@@ -16,7 +20,7 @@
   {
     "key": "cmd+,",
     "command": "workbench.action.openWorkspaceSettingsFile"
-  }
+  },
   {
     "key": "cmd+0",
     "command": "workbench.action.openLastEditorInGroup"
