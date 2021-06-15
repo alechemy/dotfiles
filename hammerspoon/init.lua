@@ -59,7 +59,7 @@ hyper_bindings = {
   },
   ["K"] = {
     ["name"] = "kitty",
-    ["newWindowMenuItem"] = {"kitty", "New OS window"}
+    ["newWindowMenuItem"] = {"Shell", "New OS window"}
   },
   ["I"] = {
     ["name"] = "iTerm2",
@@ -99,6 +99,10 @@ hyper_bindings = {
 --[[["V"] = {
     ["name"] = "Maccy"
   }]]
+  ["Z"] = {
+    ["name"] = "zoom.us",
+    ["newWindowMenuItem"] = {"zoom.us", "About Zoom"}
+  },
 }
 
 shyper_bindings = {
