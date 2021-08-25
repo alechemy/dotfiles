@@ -1,51 +1,29 @@
-[difftool "diffmerge"]
-    cmd = diffmerge $LOCAL $REMOTE
-[alias]
-    co = checkout
-    count = shortlog -sn
-    g = grep --break --heading --line-number
-    gi = grep --break --heading --line-number -i
-    changed = show --pretty=\"format:\" --name-only
-    fm = fetch-merge
-    pr = open-pr
-    please = push --force-with-lease
-    commend = commit --amend --no-edit
-    fpr = fetch-pr
-    lt = log --tags --decorate --simplify-by-decoration --oneline
-[color]
-    diff = auto
-    status = auto
-    branch = auto
-    ui = true
+[credential]
+  helper = osxkeychain
 [core]
-    excludesfile = ~/.gitignore
-    editor = nano
-    compression = -1
-    autocrlf = input
-    whitespace = trailing-space,space-before-tab
-    precomposeunicode = true
-[apply]
-    whitespace = nowarn
-[help]
-    autocorrect = 1
-[merge]
-    tool = diffmerge
-[mergetool "diffmerge"]
-    cmd = diffmerge --merge --result=$MERGED $LOCAL $BASE $REMOTE
-    trustExitCode = true
-    keepBackup = false
+  excludesfile = /Users/acuster/.gitignore
+  pager = diff-so-fancy | less --tabs=4 -RFX
+[user]
+  name = Alec Custer
+  email = alcuster@icloud.com
+[alias]
+  stash-keep = !git stash store $(git stash create)
+[pull]
+  ff = only
 [diff]
-    tool = diffmerge
+  tool = Kaleidoscope
+[difftool "Kaleidoscope"]
+  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [difftool]
-    prompt = false
-[grep]
-    extendRegexp = true
-    lineNumber = true
-[push]
-    default = simple
-[submodule]
-    fetchJobs = 4
-[commit]
-    template = ~/.dotfiles/git/template.txt
-[log]
-    showSignature = false
+  prompt = false
+[merge]
+  tool = Kaleidoscope
+[mergetool "Kaleidoscope"]
+  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+  trustExitCode = true
+[mergetool "vscode"]
+  cmd = "code --wait "
+[mergetool]
+  prompt = false
+[includeIf "gitdir:~/Work/"]
+  path = ~/.work.gitconfig

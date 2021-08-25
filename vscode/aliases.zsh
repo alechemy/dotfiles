@@ -1,2 +1,2 @@
 #!bin/zsh
-alias code=codium
+alias code=code-insiders

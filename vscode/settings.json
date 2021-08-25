@@ -1,12 +1,15 @@
 {
   // EDITOR
   // ----------------------------------------
+  "editor.accessibilitySupport": "off",
+  "editor.colorDecorators": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.detectIndentation": false,
   "editor.formatOnSave": true,
   "editor.fontFamily": "Operator Mono SSm Lig",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
+  "editor.linkedEditing": true,
   "editor.minimap.renderCharacters": false,
   "editor.renderWhitespace": "all",
   "editor.rulers": [
@@ -26,7 +29,7 @@
     "**/.project": true,
     "**/.settings": true,
     "**/.factorypath": true
-},
+  },
   // "files.insertFinalNewline": true,
   // "files.trimFinalNewlines": true,
   // "files.trimTrailingWhitespace": true,
@@ -63,6 +66,7 @@
   // JAVASCRIPT
   // ----------------------------------------
   "javascript.preferences.importModuleSpecifier": "relative",
+  "javascript.updateImportsOnFileMove.enabled": "never",
 
   // TYPESCRIPT
   // ----------------------------------------
@@ -79,7 +83,7 @@
 
   // JAVA
   // ----------------------------------------
-  "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:\"/Users/acuster/.vscode-oss/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
+  "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:\"/Users/acuster/.vscode-insiders/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
   "java.semanticHighlighting.enabled": true,
 
   // EVERYTHING ELSE
@@ -104,6 +108,9 @@
   "editor.snippetSuggestions": "bottom",
   "editor.suggest.localityBonus": true,
   "editor.suggestSelection": "first",
+  "nxConsole.enableTelemetry": false,
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "update.mode": "manual"
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.enableExperiments": false,
+  "workbench.settings.enableNaturalLanguageSearch": false
 }
