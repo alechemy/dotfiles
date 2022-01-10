@@ -32,13 +32,9 @@ end)
 -- A commented out config here usually indicates that the binding is set within
 -- the preferences of the respective app.
 hyper_bindings = {
-  ["B"] = {
-    ["name"] = "Bear",
-    ["newWindowMenuItem"] = {"Window", "Main Window"}
-  },
   ["C"] = {
-    ["name"] = "VSCodium",
-    ["bundleID"] = "com.visualstudio.code.oss",
+    ["name"] = "Visual Studio Code - Insiders",
+    ["bundleID"] = "com.microsoft.VSCodeInsiders",
     ["newWindowMenuItem"] = {"File", "New Window"}
   },
   ["D"] = {
@@ -61,11 +57,6 @@ hyper_bindings = {
     ["name"] = "kitty",
     ["newWindowMenuItem"] = {"Shell", "New OS window"}
   },
-  ["I"] = {
-    ["name"] = "iTerm2",
-    ["bundleID"] = "com.googlecode.iterm2",
-    ["newWindowMenuItem"] = {"Shell", "New Window"}
-  },
   ["M"] = {
     ["name"] = "Music",
     ["triggerOnRelease"] = true,
@@ -76,7 +67,8 @@ hyper_bindings = {
     ["newWindowMenuItem"] = {"Window", "Launcher"}
   },
   ["O"] = {
-    ["name"] = "Outlook"
+    ["name"] = "Mimestream",
+    ["newWindowMenuItem"] = {"Window", "Main Window"}
   },
   ["P"] = {
     ["name"] = "Pins"
@@ -85,13 +77,9 @@ hyper_bindings = {
     ["name"] = "Reeder",
     ["newWindowMenuItem"] = {"Window", "Reeder"}
   },
-  -- ["S"] = {
-  --   ["name"] = "Slack",
-  --   ["bundleID"] = "com.tinyspeck.slackmacgap",
-  --   ["newWindowMenuItem"] = {"Window", "TiVo"}
-  -- },
   ["S"] = {
-    ["name"] = "Slack Lite"
+    ["name"] = "Slack",
+    ["newWindowMenuItem"] = {"File", "Workspace", "Xperi"}
   },
 --[[["T"] = {
     ["name"] = "Tot"

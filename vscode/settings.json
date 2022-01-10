@@ -2,6 +2,7 @@
   // EDITOR
   // ----------------------------------------
   "editor.accessibilitySupport": "off",
+  "editor.bracketPairColorization.enabled": true,
   "editor.colorDecorators": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.detectIndentation": false,
@@ -9,6 +10,7 @@
   "editor.fontFamily": "Operator Mono SSm Lig",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
+  "editor.inlineSuggest.enabled": true,
   "editor.linkedEditing": true,
   "editor.minimap.renderCharacters": false,
   "editor.renderWhitespace": "all",
@@ -58,6 +60,9 @@
   },
   "workbench.colorTheme": "Night Owl",
   "workbench.iconTheme": "vscode-icons",
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.enableExperiments": false,
+  "workbench.settings.enableNaturalLanguageSearch": false,
 
   // ANGULAR
   // ----------------------------------------
@@ -97,8 +102,7 @@
       "type": "GitLab"
     }
   ],
-  "telemetry.enableTelemetry": false,
-  "telemetry.enableCrashReporter": false,
+  "telemetry.telemetryLevel": "off",
   "terminal.integrated.fontFamily": "Operator Mono SSm Lig",
   "terminal.integrated.defaultProfile.osx": "zsh",
   "vsicons.dontShowNewVersionMessage": true,
@@ -109,8 +113,8 @@
   "editor.suggest.localityBonus": true,
   "editor.suggestSelection": "first",
   "nxConsole.enableTelemetry": false,
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "workbench.editor.untitled.hint": "hidden",
-  "workbench.enableExperiments": false,
-  "workbench.settings.enableNaturalLanguageSearch": false
+  "search.exclude": {
+    "package-lock.json": true
+  },
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
 }
