@@ -26,4 +26,4 @@
 [mergetool]
   prompt = false
 [includeIf "gitdir:~/Work/"]
-  path = ~/.work.gitconfig
+  path = ~/.gitconfig.work

@@ -14,10 +14,6 @@ auto_restart: false
 # Matches are the substitution rules, when you type the "trigger" string
 # it gets replaced by the "replace" string.
 matches:
-  # Simple text replacement
-  - trigger: ':espanso'
-    replace: 'Hi there!'
-
   # princeum ipsum
   - trigger: ':princeum'
     replace: >
@@ -36,15 +32,6 @@ matches:
         params:
           format: '%m/%d/%Y'
 
-  # Shell commands
-  - trigger: ':shell'
-    replace: '{{output}}'
-    vars:
-      - name: output
-        type: shell
-        params:
-          cmd: 'echo Hello from your shell'
-
   # Cypress context
   - trigger: ':context'
     replace: "context('$|$', () => {});"
@@ -56,3 +43,11 @@ matches:
   # console.log(|)
   - trigger: ':log'
     replace: 'console.log($|$);'
+
+  - trigger: ':ip'
+    replace: '{{output}}'
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: "curl 'https://api.ipify.org'"

@@ -32,6 +32,9 @@ end)
 -- A commented out config here usually indicates that the binding is set within
 -- the preferences of the respective app.
 hyper_bindings = {
+  -- ["2"] = {
+  --   ["name"] = "Step Two"
+  -- },
   ["C"] = {
     ["name"] = "Visual Studio Code - Insiders",
     ["bundleID"] = "com.microsoft.VSCodeInsiders",
@@ -98,10 +101,10 @@ shyper_bindings = {
     ["name"] = "Finder",
     ["newWindowMenuItem"] = {"File", "New Finder Window"}
   },
-  ["M"] = {
-    ["name"] = "Messages",
-    ["newWindowMenuItem"] = {"Window", "Messages"}
-  },
+  -- ["M"] = {
+  --   ["name"] = "Messages",
+  --   ["newWindowMenuItem"] = {"Window", "Messages"}
+  -- },
   ["S"] = {
     ["name"] = "Safari",
     ["newWindowMenuItem"] = {"File", "New Window"}

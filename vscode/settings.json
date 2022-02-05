@@ -96,12 +96,6 @@
   "auto-close-tag.activationOnLanguage": ["xml", "HTML (Eex)"],
   "diffEditor.ignoreTrimWhitespace": false,
   "explorer.confirmDragAndDrop": false,
-  "gitlens.remotes": [
-    {
-      "domain": "git.digitalsmiths.com",
-      "type": "GitLab"
-    }
-  ],
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.fontFamily": "Operator Mono SSm Lig",
   "terminal.integrated.defaultProfile.osx": "zsh",
